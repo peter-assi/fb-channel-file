@@ -24,7 +24,8 @@ Include the gem in your Gemfile. A route will automatically be added to your app
 With no extra config the locale will be inferred from what `I18n.locale` returns. If `I18n.locale` doesn't contain a language part, the locale will default to `en_US`
 To configure something else, put this in an initializer in config/initializers:
 
-```FbChannelFileApp.config[:infer_locale] = false
+```
+FbChannelFileApp.config[:infer_locale] = false
 FbChannelFileApp.config[:locale] = 'your locale'
 ```
 
