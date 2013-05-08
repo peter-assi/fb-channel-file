@@ -35,7 +35,7 @@ module FbChannelFileEngine
   class Engine < Rails::Engine
     initializer "fb-channel-file.configure_router", :before => :add_routing_paths do |app|
       app.routes.prepend do
-        match "/channel.html" => FbChannelFileApp
+        get "/channel.html" => FbChannelFileApp
       end
     end
   end
